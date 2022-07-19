@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\v1\ProductosController; //colocar david
 use App\Http\Controllers\v1\CategoriasController; //colocar david2
+use App\Http\Controllers\v1\ClientesController; //colocar david3
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/v1/productos', [ProductosController::class, 'getproductos']);
 Route::get('/v1/categorias', [CategoriasController::class, 'getcategorias']);
+Route::get('/v1/clientes', [ClientesController::class, 'getclientes']);
